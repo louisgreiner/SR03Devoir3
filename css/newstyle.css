@@ -1,0 +1,693 @@
+@font-face {
+  font-family: 'boldfont';
+  src: url("theboldfont.ttf");
+}
+
+body {
+  margin: 0px;
+}
+
+/* Police des paragraphes */
+p {
+  font-family: 'Lora', serif;
+}
+
+.newnav {
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  width: 100%;
+}
+
+.newnav img {
+  vertical-align: middle;
+}
+
+#dropbtn {
+  background-color: white;
+  color: #333;
+  padding-top:14px;
+  border: none;
+  cursor: pointer;
+  width: 200px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  font-size: 1.5rem;
+  transition: 0.3s;
+  display: inline-block;
+}
+
+.dropdown:hover #dropbtn {
+  transform: translateY(-3px);
+  color: #6b6b6b;
+}
+
+/*  Style des liens des menus déroulants (élèves, séances, thèmes) */
+.dropbtn {
+  background-color: white;
+  color: #333;
+  padding-top:24px;
+  border: none;
+  cursor: pointer;
+  width: 200px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  font-size: 1.5rem;
+  transition: 0.3s;
+  display: inline-block;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  margin-left: 1%;
+  font-family: 'Roboto', sans-serif;
+  margin:0;
+  padding:0;
+}
+
+
+
+.dropdown:hover .dropbtn {
+  transform: translateY(-3px);
+  color: #6b6b6b;
+}
+
+.triangle {
+  transition: 0.3s;
+}
+
+.dropdown:hover .triangle {
+  transform: rotate(180deg);
+  opacity: 0.6;
+}
+
+/* Boutons déconnexion */
+.deco {
+  background-color: #008ef2;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  opacity: 1;
+  transition: 0.3s;
+  border-radius: 18px;
+  margin-top: 18px;
+  color: white;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+.deco:hover {
+  opacity: 0.6;
+}
+
+/* Ombre sous la barre */
+.shadow {
+  height: 20px;
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+}
+
+
+/* Pied de page */
+.bottom-container {
+  background-color: #858585;
+  padding: 25px;
+  padding-top: 60px;
+  line-height: 5;
+  word-spacing: 90px;
+  margin-top: 555px;
+  text-align: center;
+}
+.bottom-container a {
+  transition: 0.5s;
+  padding-left:30px;
+  padding-right: 30px;
+}
+.bottom-container a:hover {
+  opacity: 0.7;
+}
+
+
+h3 {
+  font-family: 'Crimson Text', serif;
+  font-size: 2rem;
+  color: #008ef2;
+}
+
+h4 {
+  color: #34222e;
+  font-size: 1.5rem;
+  font-family: 'Crimson Text', serif;
+}
+
+/* Bouton */
+.button {
+  background-color: #008ef2;
+  border: none;
+  color: white;
+  padding: 15px 25px;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 18px;
+  margin-left: 90%;
+  margin-right: auto;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.25em;
+  font-weight: bold;
+  margin-top: -80px;
+  opacity: 1;
+  transition: 0.3s;
+}
+
+.button:hover {
+  opacity: 0.6;
+}
+
+
+.decobutton {
+  float:right;
+  text-decoration:none;
+  color:#FFFFFF;
+  background-color: #008ef2;
+  margin-top:-55px;
+  margin-right: 15px;
+  font-size:20px;
+  padding : 12px 25px;
+  border-radius: 12px;
+  border:none;
+  transition: 0.3s;
+
+}
+
+.decobutton:hover {
+  cursor: pointer;
+  opacity: 0.6;
+
+}
+
+.decobutton:visited {
+  text-decoration:none;
+  color: #FFFFFF;
+}
+
+/* Div avec bouton 'inscrivez-vous' dans index.html */
+.Souscris {
+  margin-top: 50px;
+}
+
+/* Img Voiture dans index.html */
+.Voiture_futur {
+  position: absolute;
+  top: 80%;
+  left: 150px;
+}
+
+/* Img carte dans index.html */
+.carte {
+  position: absolute;
+  top: 134%;
+  right: 250px;
+  border-radius: 30px;
+}
+
+/* Div avec logoRoro  et L'AUTOECOLE DU FUTUR dans index.html*/
+.début {
+  margin-top: 180px;
+  display: block;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Div 'La liberté à portée de main' dans index.html*/
+.div1 {
+  padding-top: 1px;
+  margin-left: 450px;
+  margin-right: 120px;
+  font-size: 1.25rem;
+}
+
+/* Div 'Un code adapté à vos besoins' dans index.html*/
+.div2 {
+  margin-left: 50px;
+  margin-right: 495px;
+  font-size: 1.25rem;
+}
+
+/* Les petits bonhommes qui parlent de Nitroschool dans index.html */
+.avatar {
+  border-radius: 250px;
+  position: absolute;
+}
+
+.avatar1 {
+  margin-left: 15%;
+  margin-top: 30px;
+}
+
+.avatar2 {
+  margin-top: 250px;
+  margin-left: 30%;
+}
+
+.avatar3 {
+  margin-top: 480px;
+  margin-left: 15%;
+}
+
+.avatar4 {
+  margin-top: 715px;
+  margin-left: 30%;
+}
+
+/* Forme globale de TOUS les formulaires */
+form label {
+  margin-top: 100px;
+  color: #008ef2;
+  font-weight: bold;
+  font-size: 1.375rem;
+}
+
+.euros {
+  margin-left: 30px;
+  color: #333;
+  font-weight: bold;
+  font-size: 1.375rem;
+}
+.formulaire {
+  border-radius: 18px;
+  margin: 8.3% 35% 0%;
+  min-width: 555px;
+  background-color: white;
+  box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.2);
+}
+
+form input {
+  width: 100%;
+  margin-top: 10px;
+  box-sizing: border-box;
+  display: inline-block;
+  padding: 12px 20px;
+  border: none;
+  border-color: black;
+  border-radius: 12px;
+  background-color: none;
+  padding-bottom: 0px;
+}
+
+.input_euros {
+  width: 50%;
+  margin-top: 10px;
+  box-sizing: border-box;
+  display: inline-block;
+  padding: 12px 20px;
+  border: none;
+  border-color: black;
+  border-radius: 12px;
+  background-color: none;
+  padding-bottom: 0px;
+}
+
+.input_centimes {
+  margin-left: 33px;
+  width: 30%;
+  margin-top: 10px;
+  box-sizing: border-box;
+  display: inline-block;
+  padding: 12px 20px;
+  border: none;
+  border-color: black;
+  border-radius: 12px;
+  background-color: none;
+  padding-bottom: 0px;
+}
+
+
+/* Petite ligne bleue sous les labels/inputs */
+.underrule {
+  border-bottom: none;
+  border-left: none;
+  border-right: none;
+  border-radius: 10px;
+  border-top: 3px solid #008ef2;
+  margin-bottom: 30px;
+}
+
+.undereuros {
+  width: 50%;
+  float:left;
+  /* margin-right: 100px; */
+  border-bottom: none;
+  border-left: none;
+  border-right: none;
+  border-radius: 10px;
+  border-top: 3px solid #008ef2;
+  margin-bottom: 30px;
+}
+
+.undercentimes {
+  margin-left: 87px;
+  width: 30%;
+  float:left;
+  border-bottom: none;
+  border-left: none;
+  border-right: none;
+  border-radius: 10px;
+  border-top: 3px solid #008ef2;
+  margin-bottom: 30px;
+}
+/* Joli bouton bleu pour envoyer le form */
+input[type=submit] {
+  background-color: #008ef2;
+  transition: 0.3s;
+  color: #ffffff;
+  font-size: 16px;
+  text-decoration:none;
+  padding : 12px 25px;
+  border-radius: 12px;
+  border:none;
+  width: 120px;
+  text-align: center;
+}
+
+input[type=submit]:hover {
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+/* En-tête du form */
+.inscription img {
+  position: absolute;
+}
+
+.formulaire h3 {
+  padding-top: 1.5%;
+  padding-left: 14%;
+  font-family: 'boldfont', serif;
+  font-weight: lighter;
+}
+
+/* Clauses confidentielles de Nitroschool dans tarifs.html */
+.mytho {
+  text-align: center;
+  font-size: 14px;
+  color: #858585;
+  margin-top: 70px;
+}
+
+/* La boîte du radio bouton de statistiques élève */
+.container {
+  display: inline;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 15px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Cache le checkmark de base tout moche */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Le joli petit nouveau checkmark */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+.container:hover input~.checkmark {
+  background-color: #ccc;
+}
+
+/* Et ça devient bleu quand tu le checkes, avec un joli point blanc ! */
+.container input:checked~.checkmark {
+  background-color: #008ef2;
+}
+
+/* Crée le point blanc, caché par défaut */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Affiche le checkmarck quand checké */
+.container input:checked~.checkmark:after {
+  display: block;
+}
+
+/* Style du joli point blanc*/
+.container .checkmark:after {
+  top: 9px;
+  left: 9px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: white;
+}
+
+/* Form pour le choix du sexe dans ajouter_eleve.html*/
+.sexe {
+  margin-left: 15%;
+  margin-right: auto;
+  margin-bottom: 13px;
+}
+
+/* Cache la flèche du select, ouiiiii*/
+select {
+  -moz-appearance: none;
+  text-indent: 0.01px;
+  text-overflow: '';
+}
+
+/* Les jolis tableaux pour liste_eleves.php, ... */
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+  min-width: 350px;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.2);
+  font-size: 1rem;
+}
+
+/* Afficher des bordures un peu partout, et définir la taille des cellules */
+table tr th,
+table tr td {
+  border-bottom: 1px solid #bbb;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 35px;
+  padding-right: 35px;
+}
+
+table tr th:first-child,
+table tr td:first-child {
+  border-left: 1px solid #bbb;
+}
+
+table tr th:last-child,
+table tr td:last-child {
+  border-right: 1px solid #bbb;
+}
+
+table tr th {
+  background: #008ef2;
+  border-top: 1px solid #bbb;
+  text-align: center;
+  color: #ffffff;
+  font-size: 1.125rem;
+}
+
+/* Arrondi en haut à gauche */
+table tr:first-child th:first-child {
+  border-top-left-radius: 6px;
+}
+
+/* Arrondi en haut à droite */
+table tr:first-child th:last-child {
+  border-top-right-radius: 6px;
+}
+
+/* Arrondi en bas à gauche */
+table tr:last-child td:first-child {
+  border-bottom-left-radius: 6px;
+}
+
+/* Arrondi en bas à droite */
+table tr:last-child td:last-child {
+  border-bottom-right-radius: 6px;
+}
+
+
+table tr:nth-child(odd) {
+  background-color: #e6e6e6;
+}
+
+/* Bouton de confirmation type 'Ajouter l'élève quand même' dans ajout_eleve.php */
+.buttonsub {
+  background-color: #ff7770;
+  border: none;
+  color: white;
+  padding: 15px 25px;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 18px;
+  margin-left: 43%;
+  margin-right: auto;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.25em;
+  font-weight: bold;
+  margin-top: 20px;
+  opacity: 1;
+  transition: 0.3s;
+}
+
+.buttonsub:hover {
+  background-color: white;
+  color: #ff7770;
+}
+
+/* Div choix des stats par élève ou par thème dans statistiques_eleve */
+.choix_stats {
+  margin-left: 7.5%;
+  margin-right: auto;
+  margin-bottom: 13px;
+}
+
+/* Jolis icônes pour trier les élèves et les séances */
+.buttontri {
+  display: inline-block;
+  background-color: #7ac27e;
+  border: none;
+  color: white;
+  padding: 5px 25px;
+  text-align: center;
+  margin-bottom: 20px;
+  cursor: pointer;
+  border-radius: 18px;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  opacity: 1;
+  transition: 0.3s;
+}
+
+.buttontri:hover {
+  opacity: 0.6;
+}
+
+/* Champ de texte pour rechercher un élève */
+.buttonsearch {
+  display: inline-block;
+  background-color: #7ac27e;
+  border: none;
+  color: white;
+  padding: 5px 25px;
+  text-align: center;
+  margin-bottom: 20px;
+  border-radius: 18px;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.9rem;
+  font-weight: bold;
+  opacity: 1;
+  transition: 0.3s;
+}
+
+/* icône Loupe pour rechercher un élève */
+
+.buttonloupe {
+  background-color: transparent;
+  cursor: pointer;
+  display: inline-block;
+  border: none;
+  color: transparent;
+  text-align: center;
+  border-radius: 18px;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  opacity: 1;
+  transition: 0.3s;
+}
+
+.buttonloupe:hover {
+  opacity: 0.6;
+}
+
+/* icône Loupe pour consulter un élève */
+.buttonloupe2 {
+    transition: 0.3s;
+}
+.buttonloupe2:hover {
+    opacity: 0.6;
+}
+
+/* Liens dans la page acces_moniteur.php */
+.withinframe {
+  text-decoration: none;
+  border-radius:15px;
+  padding:5px 76px;
+  font-family: 'Roboto', sans-serif;
+  color:#333;
+  border:3px solid #333;
+  transition: 0.5s;
+  font-size: 16px;
+  background-color: white;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  /* width: 400px; */
+}
+.withinframe:hover{
+  color:#ffffff;
+  background-color: #333;
+  cursor: pointer;
+
+}
+
+#homebutton {
+  background-color:#858585;
+  transition: 0.3s;
+  color: #ffffff;
+  font-size: 16px;
+  text-decoration:none;
+  padding : 12px 25px;
+  border-radius: 12px;
+  border:none;
+  width: 120px;
+  text-align: center;
+  margin-right: 60px;
+}
+
+#homebutton:hover {
+  cursor: pointer;
+  opacity: 0.6;
+}
+
+.homebutton:hover {
+  cursor: pointer;
+  opacity: 0.6;
+}
+
+.espace {
+  width: 100px;
+}
